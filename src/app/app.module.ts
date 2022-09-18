@@ -1,5 +1,5 @@
-import PrismaModule from 'src/libs/prisma/prisma.module';
-import Components from 'src/components';
+import PrismaModule from '@/libs/prisma/prisma.module';
+import Components from '@/components';
 import { Module } from '@nestjs/common';
 
 @Module({

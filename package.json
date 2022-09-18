@@ -23,13 +23,14 @@
     "prisma:gen": "prisma generate --schema ./src/libs/prisma/schema.prisma"
   },
   "dependencies": {
+    "@nestjs/apollo": "^10.1.0",
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/graphql": "^10.1.1",
     "@nestjs/platform-express": "^9.0.0",
     "@prisma/client": "^4.3.1",
     "apollo-server-express": "^3.10.2",
-    "graphql": "^15",
+    "graphql": "^16.6.0",
     "graphql-subscriptions": "^2.0.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
