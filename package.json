@@ -19,13 +19,18 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
+    "prisma:studio": "prisma studio --schema ./src/libs/prisma/schema.prisma",
     "prisma:gen": "prisma generate --schema ./src/libs/prisma/schema.prisma"
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
+    "@nestjs/graphql": "^10.1.1",
     "@nestjs/platform-express": "^9.0.0",
     "@prisma/client": "^4.3.1",
+    "apollo-server-express": "^3.10.2",
+    "graphql": "^15",
+    "graphql-subscriptions": "^2.0.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0"

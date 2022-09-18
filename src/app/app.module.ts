@@ -1,7 +1,8 @@
-import PrismaService from 'src/libs/prisma/prisma.service';
+import PrismaModule from 'src/libs/prisma/prisma.module';
+import Components from 'src/components';
 import { Module } from '@nestjs/common';
 
 @Module({
-  imports: [PrismaService],
+  imports: [PrismaModule, ...Components],
 })
 export default class AppModule {}
